@@ -46,7 +46,7 @@ function App() {
               <tr className="center" key={index}>
                 <td>{allSector.id}</td>
                 <td>{allSector.name}</td>
-                <td>{allSector.total}</td>
+                <td>{((allSector.total/150)*100).toFixed(2)}%</td>
               </tr>
               );
             }) }
